@@ -26,7 +26,7 @@ async function hooverMover() {
 hooverMover();
 
 /* init()
- * Reads input file to initialize Hoover Mover variables.
+ * Reads input file and then initializes Hoover Mover variables.
  */
 async function init() {
   let input = await fs.readFileSync(filepath, "utf-8").split("\n");
