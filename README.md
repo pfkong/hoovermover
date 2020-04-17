@@ -15,7 +15,7 @@
 Using *input.txt* provided in the repo, the expected output is:
 
 ```
-YOUR_COMPUTER:hoovermover USER$ node hoovermover.js
+USER$ node hoovermover.js
 1 3
 1
 ```
