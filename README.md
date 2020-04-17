@@ -9,10 +9,12 @@
 1. Files *hoovermover.js* and *input.txt* are in the same directory.
 1. *input.txt* should abide the format [specified here](https://gist.github.com/alirussell/2d200d21f117f8d570667daa7acdbae5#https://gist.github.com/alirussell/2d200d21f117f8d570667daa7acdbae5).
 
-**Example**
+**Running the Program**
 ----
 
-Using *input.txt* provided in the repo, the expected output is:
+Running `node hoovermover.js` will run the program.
+
+Using *input.txt* provided in the repo as an example, the expected output is:
 
 ```
 USER$ node hoovermover.js
