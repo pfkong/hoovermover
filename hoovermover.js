@@ -8,17 +8,14 @@ let filepath = "./input.txt",
   dirtCleared = 0;
 
 // Main thread.
-async function hooverMover() {
-  await init();
-
+function hooverMover() {
+  init();
   // Hoover definitely slurps when cleaning. I assume the hoover slurps on whereever it starts.
   slurp();
-
   // Move that hoover. Slurping done as necessary.
   for (dir of directions) {
     moveHoover(dir);
   }
-
   // Print output. Oh, how the hoover has moved!
   console.log(position.x, position.y);
   console.log(dirtCleared);
@@ -28,8 +25,8 @@ hooverMover();
 /* init()
  * Reads input file and then initializes Hoover Mover variables.
  */
-async function init() {
-  let input = await fs.readFileSync(filepath, "utf-8").split("\n");
+function init() {
+  let input = fs.readFileSync(filepath, "utf-8").split("\n"); // didn't want to use async/await just for this.
   // Last line will always be cardinal directions (and thus not a coordinate)
   directions = input.pop().split("");
   // Everything else is a coordinate, data should reflect that. Also parse to Integers to make adding easier later.
