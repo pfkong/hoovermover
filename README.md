@@ -4,6 +4,7 @@
 
 ## **Prereqs**
 
+1. Download _hoovermover.js_ and at least _input.txt_ into a directory of your choice. Optionally, download any of the other .txt input files.
 1. _node.js_ must be available in the running environment, so that the `node` command is available.
 1. Files _hoovermover.js_ and _input.txt_ are in the same directory.
 1. _input.txt_ should abide the format specified below.
