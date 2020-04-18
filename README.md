@@ -33,7 +33,7 @@ USER$ node hoovermover.js
 1
 ```
 
-Running `node hoovermover.js *.txt` will attempt to run move hoovers across all the given files:
+Running `node hoovermover.js *.txt` will attempt to run move hoovers across all the given files. Using all .txt files provided in the repo as an example:
 
 ```
 Peters-MBP:hoovermover peterkong$ node hoovermover.js *.txt
