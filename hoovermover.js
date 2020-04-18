@@ -2,10 +2,15 @@
  * hoovermover.js
  * Given input files, move a digital robotic hoover around the room to clean whatever dirt it comes across in each file given.
  *
- * Input file is optional, default is "input.txt".
- *
- * Usage:
  * node hoovermover.js [file, ...]
+ *
+ * Inputs:
+ * file: Name of file(s).
+ *
+ * Outputs:
+ * 1. Input file name
+ * 2. Position of hoover
+ * 3. # of dirt spots hoovered
  */
 
 const fs = require("fs"); // Node.js is being used as the runtime.
