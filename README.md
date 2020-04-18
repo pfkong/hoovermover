@@ -1,29 +1,53 @@
 # hoovermover.js
 
-`hoovermover.js` is a fantastic way to move an automated hoover for cleaning virtual dirt in an input file! 
+`hoovermover.js` is a fantastic way to move an automated hoover for cleaning virtual dirt in an input file!
 
-**Prereqs**
-----
+## **Prereqs**
 
-1. *node.js* must be available in the running environment, so that the `node` command is available.
-1. Files *hoovermover.js* and *input.txt* are in the same directory.
-1. *input.txt* should abide the format specified below.
+1. _node.js_ must be available in the running environment, so that the `node` command is available.
+1. Files _hoovermover.js_ and _input.txt_ are in the same directory.
+1. _input.txt_ should abide the format specified below.
 
-**Running the Program**
-----
+## Usage
+
+```
+node hoovermover.js [file, ...]
+```
+
+No file param assumes `input.txt`.
+
+## **Running the Program**
 
 Running `node hoovermover.js` will run the program.
 
-Using *input.txt* provided in the repo as an example, the expected output is:
+Using the _input.txt_ provided in the repo as an example, the expected output is:
 
 ```
 USER$ node hoovermover.js
+[file: input.txt]
 1 3
 1
 ```
 
-**input.txt Format**
-----
+Running `node hoovermover.js *.txt` will attempt to run move hoovers across all the given files:
+
+```
+Peters-MBP:hoovermover peterkong$ node hoovermover.js *.txt
+[file: input.txt]
+1 3
+1
+[file: test_hooverAll.txt]
+1 0
+3
+[file: test_outOfBounds1.txt]
+0 0
+1
+[file: test_outOfBounds2.txt]
+4 4
+0
+```
+
+## **input.txt Format**
 
 1. 1st line: Coordinates representing the size of the room.
 1. 2nd line: Coordinates representing the starting position of the robotic hoover.
