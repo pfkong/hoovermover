@@ -27,6 +27,7 @@ No file param assumes `input.txt`.
 
 ## **Running the Program**
 
+### Single Input File / No Input File
 Running `node hoovermover.js` will run the program.
 
 Using the _input.txt_ provided in the repo as an example, the expected output is:
@@ -38,7 +39,8 @@ USER$ node hoovermover.js
 1
 ```
 
-Running `node hoovermover.js *.txt` will attempt to run move hoovers across all the given files. Using all .txt files provided in the repo as an example:
+### Multiple Input Files
+Running `node hoovermover.js *.txt` will attempt to move all the hoovers across given files. Using all .txt files provided in the repo as an example:
 
 ```
 Peters-MBP:hoovermover peterkong$ node hoovermover.js *.txt
