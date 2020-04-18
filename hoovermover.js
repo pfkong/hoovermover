@@ -1,8 +1,20 @@
+/**
+ * hoovermover.js
+ * Given input files, move a digital robotic hoover around the room to clean whatever dirt it comes across in each file given.
+ *
+ * Input file is optional, default is "input.txt".
+ *
+ * Usage:
+ * node hoovermover.js [file, ...]
+ */
+
 const fs = require("fs"); // Node.js is being used as the runtime.
 
 // Assuming we have more than one file...
 if (process.argv.length > 2) {
-  let files = process.argv.splice(2, process.argv.length - 2);
+  let args = process.argv,
+    files = args.splice(2, args.length - 2);
+
   files.forEach((f) => {
     hooverMover(f);
   });
@@ -21,7 +33,7 @@ function hooverMover(file) {
   if (fs.existsSync(file)) {
     init();
     // Hoover definitely slurps when cleaning. I assume the hoover begins slurping dirt whereever it begins.
-    slurp();
+    slurpDirt();
     // Move that hoover in the order of each direction given. Slurping done as necessary.
     directions.forEach((dir) => {
       moveHoover(dir);
@@ -87,7 +99,7 @@ function hooverMover(file) {
       newPosition.y < 5
     ) {
       position = newPosition;
-      slurp();
+      slurpDirt();
     }
   }
 
@@ -95,7 +107,7 @@ function hooverMover(file) {
    * slurp()
    * Hoover slurps on the current position, effectively removing any dirt on it.
    */
-  function slurp() {
+  function slurpDirt() {
     let index = dirtLeft.findIndex(
       (e) => JSON.stringify(e) === JSON.stringify(position)
     );

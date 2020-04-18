@@ -4,6 +4,7 @@
  * 2. Too many console.log lines.
  *
  * Difference between this draft and submission is that you can run "-v" as an option to enable verbose mode.
+ * Well, this code also only assumes input.txt as the file to be read and takes no input.
  * It was helpful for when I was initially stepping through my program to test it.
  **/
 
