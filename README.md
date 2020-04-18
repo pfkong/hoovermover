@@ -1,6 +1,6 @@
-# hoovermover
+# hoovermover.js
 
-`hoovermover` is a fantastic way to move an automated hoover for cleaning virtual dirt in an input file! 
+`hoovermover.js` is a fantastic way to move an automated hoover for cleaning virtual dirt in an input file! 
 
 **Prereqs**
 ----
