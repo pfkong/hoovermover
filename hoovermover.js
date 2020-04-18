@@ -102,10 +102,9 @@ function hooverMover(file) {
       slurpDirt();
     }
   }
-
   /**
-   * slurp()
-   * Hoover slurps on the current position, effectively removing any dirt on it.
+   * slurpDirt()
+   * Hoover slurps dirt from the current position.
    */
   function slurpDirt() {
     let index = dirtLeft.findIndex(
