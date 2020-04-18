@@ -14,9 +14,13 @@
 ```
 node hoovermover.js [file, ...]
 
-Returns two coordinates:
+Inputs:
+file: Name of file(s).
+
+Outputs:
+1. Input file name
 1. Position of hoover
-2. # of dirt spots hoovered.
+1. # of dirt spots hoovered
 ```
 
 No file param assumes `input.txt`.
