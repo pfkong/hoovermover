@@ -19,8 +19,8 @@ file: Name of file(s).
 
 Outputs:
 1. Input file name
-1. Position of hoover
-1. # of dirt spots hoovered
+2. Position of hoover
+3. # of dirt spots hoovered
 ```
 
 No file param assumes `input.txt`.
